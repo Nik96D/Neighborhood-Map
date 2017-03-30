@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marburg Google Maps</title>
+    <link rel="stylesheet" href="knockout.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="list">
+        <input placeholder="..." class="form-control" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off">
+        <h3 id="search-results-header">Search results:</h3>
+        <ul id="ul" data-bind="foreach: searchResults">
+            <li data-bind="text: title, click: $root.markerAction"></li>
+        </ul>
+        <br/>
+        <div class="wikipedia-container">
+            <h3>Wikipedia:</h3>
+            <hr>
+            <ul id="wikipedia-links"></ul>
+            <div data-bind="text: wikiText"></div>
+        </div>
+        </div>
+        <header id="header">
+            <button id="button" data-bind="click: $root.hamburgerHide">
+            Hide/Show<br/> Menue
+        </header>
+    <div id="map"></div>
+    <script src="jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+    <script src="knockout.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?libraries=geometry&key=AIzaSyBkGIoTGm0MvZ9G896gBwPcH9hi69RF9Lo&v=3&callback=initMap" onerror="googleError()"></script>
+</body>
+</html>

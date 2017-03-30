@@ -1,0 +1,9 @@
+#README
+
+This is my Neighborhood Map Udacity Project.
+It shows various places of my Hometown with a marker that when it is clicked opens a infowindow with a googlestreetview image and a link to a wikipedia page at the sidebar. On the sidebar you can also find all the locations in a list and search through them with the searchbar. The list items can also open the marker infowindow.
+
+
+How to run the apllication:
+
+Open the knockout.html file in your browser.

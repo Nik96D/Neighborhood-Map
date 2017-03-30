@@ -1,0 +1,101 @@
+html, body {
+	height: 100%;
+	background-color: #fafafa;
+}
+
+#icon {
+	width: 50px;
+}
+
+.list {
+	height: 100%;
+	float: left;
+	width: 250px;
+	background-color: #fafafa;
+	padding: 10px;
+	font-size: 16px;
+	font-family: arial;
+	font-weight: bold;
+	line-height: 38px;	
+}
+
+#header {
+	padding:  7px;
+	background-color: #fafafa;
+}
+
+#button {
+	margin-left: 30px;
+}
+
+#popup {
+  height: 200px;
+  width: 500px;
+}
+
+#search-results-header {
+	margin-left: 40px;
+}
+
+#map {
+	height: 93.5%;
+	font-weight: bold;
+	font-family: arial;
+	font-size: 40px;
+	border: 2px solid black;
+}
+
+#error-message {
+	height: 100%;
+}
+
+.form-control {
+	width: 90%;
+	font-size: 16px;
+	border: 0.05px solid grey;
+}
+
+li:hover {
+	color: #0091ff;
+
+}
+
+#ul {
+	list-style: none;
+	background-color: white;
+	width: 77%;
+	border: 0.05px solid grey;
+}
+
+@media all and (max-width: 400px) {
+	#header {
+	padding:  0px;
+	
+	} 
+	#button {
+	margin-left: 0px;
+	font-size: 10px;
+	}
+}
+@media all and (max-width: 323px) {
+	#header {
+	padding:  0px;
+	
+	} 
+	#button {
+	margin-left: 0px;
+	font-size: 10px;
+
+	}
+	.list {
+	width: 150px;
+	font-size: 10px;
+}
+}
+
+
+
+
+
+
+
